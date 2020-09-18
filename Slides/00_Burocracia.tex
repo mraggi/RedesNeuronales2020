@@ -1,0 +1,295 @@
+\pdfoptionpdfminorversion=5
+%\documentclass[spanish,professionalfonts]{beamer}
+\documentclass[spanish]{beamer}
+% \usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,mexico]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{xmpmulti}
+\usefonttheme{professionalfonts}
+\usefonttheme{serif} % default family is serif
+% \usepackage{fontspec}
+% \setmainfont{Liberation Serif}
+
+% \usefonttheme[onlymath]{serif}
+\usepackage{tabularx} 
+%%Regular colours! 
+\definecolor{MyBlack}{RGB}{0,0,0}
+\definecolor{MyRed}{RGB}{255,30,30}
+\definecolor{MyBlue}{RGB}{80,100,255}
+\definecolor{MyDarkBlue}{RGB}{0,0,100}
+\definecolor{MyGreen}{RGB}{0,255,0}
+\definecolor{MyCyan}{RGB}{0,255,255}
+\definecolor{MyBrown}{RGB}{180,90,10}
+\definecolor{MyPurple}{RGB}{160,20,255}
+\definecolor{MyDarkPurple}{RGB}{80,0,120}
+\definecolor{MyLightPurple}{RGB}{180,70,255}
+\definecolor{MyYellow}{RGB}{255,255,0}
+\definecolor{MyOrange}{RGB}{255,160,10}
+\definecolor{MyGray}{RGB}{170,170,170}
+\definecolor{MyDarkGray}{RGB}{15,25,30}
+\definecolor{MyWhite}{RGB}{255,255,255}
+\definecolor{MyInvisible}{RGB}{0,0,0}
+\definecolor{MyPink}{RGB}{255,0,120}
+
+\usetheme{Boadilla}
+\usecolortheme{albatross}
+
+
+% \setbeamercovered{dynamic}
+% \useoutertheme{shadow}
+\useinnertheme{rectangles}
+\usecolortheme[MyPurple]{structure}
+\setbeamercolor{structure}{bg=MyDarkGray, fg=MyLightPurple}
+\setbeamercolor{frametitle}{bg=MyDarkGray, fg=MyBlue}
+\setbeamercolor{title}{bg=MyDarkPurple, fg=MyWhite}
+\setbeamercolor{normal text}{bg=MyBlack,fg=MyWhite}
+% \setbeamercolor{alerted text}{fg=orange}
+\setbeamercolor{block}{bg=MyPink,fg=MyOrange}
+\setbeamercolor{background canvas}{bg=MyBlack,fg=MyDarkGray}
+% \setbeamercolor{titlelike}{fg=MyBrown}
+% \setbeamercolor{section in sidebar}{fg=MyRed}
+% \setbeamercolor{section in sidebar shaded}{fg= grey}
+% \setbeamercolor{subsection in sidebar}{fg=blue}
+% \setbeamercolor{subsection in sidebar shaded}{fg= grey}
+% \setbeamercolor{sidebar}{bg=red}
+
+
+\setbeamercolor{block body}{bg=MyDarkGray}
+\setbeamercolor{block title}{bg=MyDarkBlue, fg=MyGreen}
+
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+
+\def\tcr#1{\textcolor{MyRed}{#1}}
+\def\tcb#1{\textcolor{MyBlue}{#1}}
+\def\tcbck#1{\textcolor{MyBlack}{#1}}
+\def\tcg#1{\textcolor{MyGreen}{#1}}
+\def\tcgr#1{\textcolor{MyGray}{#1}}
+\def\tcbr#1{\textcolor{MyBrown}{#1}}
+\def\tcp#1{\textcolor{MyPurple}{#1}}
+\def\tcy#1{\textcolor{MyYellow}{#1}}
+\def\tco#1{\textcolor{MyOrange}{#1}}
+\def\tcw#1{\textcolor{MyWhite}{#1}}
+\def\tci#1{\textcolor{MyInvisible}{#1}}
+\def\tcpk#1{\textcolor{MyPink}{#1}}
+\def\tcc#1{\textcolor{MyCyan}{#1}}
+
+\def\NS{{\mathrm{NoSplit}}}
+\def\ff{{\mathrm{MaxChoiceCols}}}
+\def\Av{{\mathrm{Avoid}}}
+\def\I{{\mathcal{I}}}
+\newcommand{\ncols}[1]{\| #1 \|}
+\def\qed{ \hskip 20pt{$\blacksquare$}\hfil}
+\def\forb{{\mathrm{forb}}}
+\def\cA{{\mathcal{A}}}
+\def\cB{{\mathcal{B}}}
+\def\cC{{\mathcal{C}}}
+\def\cD{{\mathcal{D}}}
+\def\cE{{\mathcal{E}}}
+\def\cF{{\mathcal{F}}}
+\def\cG{{\mathcal{G}}}
+\def\cH{{\mathcal{H}}}
+\def\cI{{\mathcal{I}}}
+\def\cJ{{\mathcal{J}}}
+\def\cK{{\mathcal{K}}}
+\def\cL{{\mathcal{L}}}
+\def\cM{{\mathcal{M}}}
+\def\cN{{\mathcal{N}}}
+\def\cO{{\mathcal{O}}}
+\def\cP{{\mathcal{P}}}
+\def\cQ{{\mathcal{Q}}}
+\def\cR{{\mathcal{R}}}
+\def\cS{{\mathcal{S}}}
+\def\cT{{\mathcal{T}}}
+\def\cU{{\mathcal{U}}}
+\def\cV{{\mathcal{V}}}
+\def\cW{{\mathcal{W}}}
+\def\cX{{\mathcal{X}}}
+\def\cY{{\mathcal{Y}}}
+\def\cZ{{\mathcal{Z}}}
+
+\def\I{{\mathcal{I}}}
+
+\def\CC{{\mathbb{C}}}
+\def\HH{{\mathbb{H}}}
+\def\RR{{\mathbb{R}}}
+\def\NN{{\mathbb{N}}}
+\def\ZZ{{\mathbb{Z}}}
+\def\QQ{{\mathbb{Q}}}
+
+\newtheorem{conjecture}{Conjetura}
+\newtheorem{problema}{Problema}
+\newtheorem{teorema}{Teorema}
+\newtheorem{proposicion}{Proposición}
+\newtheorem{ejercicio}{Ejercicio}
+\newtheorem{definicion}{Definición}
+\newtheorem{observacion}{Observación}
+\newtheorem{lema}{Lema}
+\newtheorem{ejemplo}{Ejemplo}
+
+\title{Burocracia}
+\author[M. Raggi (\texttt{mraggi@gmail.com})]{Miguel Raggi \\ \texttt{\url{mraggi@gmail.com}}}
+\institute[]{\tcr{Re}\tco{de}\tcy{s N}\tcg{eu}\tcc{ron}\tcb{al}\tcp{es} \\ Escuela Nacional de Estudios Superiores \\ UNAM}
+
+\begin{document}
+
+% \AtBeginSection[]
+% {
+% \begin{frame}
+% \frametitle{Índice:}
+% \tableofcontents[currentsection]
+% \end{frame} 
+% }
+
+% \begin{frame}\frametitle{Color Test}
+% \tcw{blanco}, \tcb{azul}, \tcr{rojo}, \tcg{verde}, \tcp{morado}, \tcy{amarillo}, \tcbr{café}, \tcbck{negro}, \tcgr{gris}, \tco{anaranjado}, \tci{Invisible}
+% \end{frame}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+
+% \begin{frame}
+% \frametitle{Índice:}
+% \tableofcontents
+% \end{frame} 
+
+
+
+\section{Funcionamiento del curso}
+\begin{frame}\frametitle{2020, el mejor año sin duda}
+\begin{center}
+	\huge{¡Bienvenidos a \tcr{Re}\tco{de}\tcy{s N}\tcg{eu}\tcc{ron}\tcb{al}\tcp{es}!}
+	\pause
+	
+	...\textit{en linea}!
+\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{\tcr{Re}\tco{de}\tcy{s N}\tcg{eu}\tcc{ron}\tcb{al}\tcp{es}}
+\begin{itemize}
+ \item ¡Este es el curso \tcg{más importante} de la carrera!\pause
+ \item Si me conocen, saben que en general mis cursos no están diseñados para que todos saquen 10. \pause
+ \item Este es diferente: \tcg{todos deben sacar 10}.\pause
+ \item Eso no significa para nada que será fácil. Probablemente será el curso que requiera más trabajo de la carrera, pero no será trabajo intelectualmente difícil.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}\frametitle{¿Cómo va a funcionar esto?}
+\begin{enumerate}
+ \item 100\% en linea. \pause
+ \item Principalmente será \tcg{asíncrono} con actividades como:
+ \begin{itemize}
+    \item Videos cortos ($\sim$5-10 mins)
+    \item Quizzes sencillos de opción múltiple sobre los videos
+    \item Tareas
+ \end{itemize}\pause
+ \item Al terminar cada tema tendremos una sesión \tcp{en tiempo real}, en donde platicaremos sobre los videos/lecturas, para que ustedes hagan preguntas.\pause
+ \item Para entrar a esta clase, \tcb{será requisito haber visto los videos e intentado 1 vez los quizzes correspondientes}. \tcr{¡¡Si no los viste, no puedes entrar!!}
+\end{enumerate}
+\end{frame}
+
+\section{Calificaciones}
+
+\begin{frame}\frametitle{¿Cómo voy a calificar?}
+	\begin{itemize}
+		\item Quizzes: 20\%
+		\item Tareas: 35\%
+		\item Experimento arquitectura: 20\%
+		\item Proyecto individual y exposición: 25\%
+		\item \scriptsize{Lecturas y Tutoriales: 10\% extra}
+	\end{itemize}
+	\pause
+	La calificación será \tcg{la media geométrica pesada}\footnote{$\sqrt[100]{Q^{20}T^{35}E^{20}P^{25}} + 0.1 L$} de las 4 primeras + 10\% de la última. Es decir, si sacas 0 en UNA de las primeras, sacas 0 en total (o posiblemente hasta 1 de calificación).
+\end{frame}
+
+\begin{frame}\frametitle{Quizzes (20\%)}
+    \begin{enumerate}
+     \item Serán sencillos, de opción múltiple, si viste los videos.\pause
+     \item Puedes intententarlos tantas veces como quieras. \pause
+     \item Cada vez que los intentas te dirá qué tuviste mal y así, para que lo hagas mejor a la siguiente.\pause
+     \item \tcr{Importante:} Para tener derecho a calificación, \tcg{debes sacar 10 en todos los quizzes sin excepción}.\pause
+     \item \tcr{Importante:} Para poder entrar a la sesión en vivo, \tcg{debes haber intentado por lo menos una vez el quiz}. No importa cuánto hayas obtenido.
+    \end{enumerate}
+\end{frame}
+
+
+\begin{frame}\frametitle{Tareas (35\%)}
+\begin{itemize}
+ \item Las tareas consistirán básicamente en entregar libretas de jupyter en donde harán cosas bien padres!\pause
+ \item En la tarea \tcg{se vale consultar con profesores, compañeros, etc.}, pero absolutamente todo lo que entregues debe ser escrito por ti (nunca copy-paste!). \tcr{NO} se vale mostrarle tu código a nadie. Se vale enviar documentación, o decirle ``ve la documentación de torch.sigmoid'' o lo que sea.\pause
+ \item Usualmente serán modificaciones pequeñas a lo que les mostraré en los videos.\pause
+ \item No les pasaré las libretas, solo screenshots de ellas. ¡Así tendrán que copiar y no dar CTRL-C, CTRL-V!
+\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Experimento Arquitectura (20\%)}
+Es como una tarea grande y ``abierta'', en el sentido de que la idea es que aprendan a experimentar.\pause
+ \begin{itemize}
+  \item Les proporcionaré datos para clasificación de imágenes, y pondré algunas restricciones. \pause
+  \item Ustedes harán todos los experimentos que se les ocurran, tratando de alcanzar la máxima \textit{accuracy} (precisión) que puedan.\pause
+  \item Voy a calificar cuánto experimentaste y qué ideas tuviste, NO solo a cuánta precisión llegaste. Así que debes reportar todo, lo que funcionó y lo que no.\pause
+  \item Sin embargo, habrá premios \textit{virtuales}\footnote{En años pasados les di chocolates, pero ahora... me los comeré yo en su honor.} a los que lleguen a más precisión.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Exposición/Proyecto (25\%)}
+ \begin{itemize}
+  \item Al final del curso cada quien deberá hacer algún \tcg{proyecto individual} original, de algo que les interese y exponerlo (e.g. mandar video de youtube).\pause
+  \item No tiene que ser algo innovador o en ``estado del arte'', pero sí algo interesante y que NO hayamos hecho en clase algo igual.\pause
+  \item Más detalles ya después.
+ \end{itemize}
+\end{frame}
+
+
+\begin{frame}\frametitle{Tutoriales y Lecturas (10\%)}
+Es muy importante mantenerse al día en esta área. Por eso deben constantemente leer artículos, ver videos de youtube, hacer tutoriales, etcétera.\pause
+ \begin{itemize}
+  \item Cada semana reportarás exactamente qué artículos, videos o tutoriales viste, y qué aprendiste de cada uno.\pause
+  \item Cada semana les pondré algunas lecturas opcionales, pero la idea es que tú busques otras. \pause
+  \item En base a cuánto hayas leído, etc. te daremos hasta 1 punto extra en la calificación final.\pause
+  \item Les recomiendo consumir al menos 2 o 3 por semana. Yo más o menos leo o veo uno al día, aunque no todos los días. Más o menos como 5 por semana.
+ \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{¿De donde sacar contenido?}
+ \begin{itemize}
+  \item Reddit (r/MachineLearning, r/deeplearning)
+  \item Youtube (two minute papers, 3blue1brown, dotcsv, etc.)
+  \item Medium (toward data science, etc.)
+  \item kdnuggets
+  \item distill
+  \item thegradient
+ \end{itemize}
+\end{frame}
+
+% \begin{frame}\frametitle{Programa}
+%   Parte I: Probabilidad Discreta
+%   \begin{enumerate}
+%     \item Espacios de probabilidad
+%     \item Probabilidad combinatoria
+%     \item Variables aleatorias
+%     \item Operadores: Esperanza, Varianza, Covarianza, etc.
+%     \item Redes Bayesianas
+%   \end{enumerate}
+%   
+%   Parte II: Probabilidad Continua
+%   \begin{enumerate}
+%     \item Diferencias entre discreta y contínua
+%     \item Espacios de probabilidad contínuos
+%     \item Variables aleatorias, distribuciones
+%     \item Operadores: Esperanza, Varianza, Covarianza, etc.
+%     \item Teorema del límite central
+%     \item Desigualdades
+%   \end{enumerate}
+% 
+%   Si da tiempo, también veremos ``Parte III: Pensamiento Crítico'', aunque no es parte del programa (semi)oficial.
+% \end{frame}
+
+
+\end{document}
